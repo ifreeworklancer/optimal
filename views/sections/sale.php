@@ -9,7 +9,7 @@
                             акция
                         </div>
                     </div>
-                    <div class="sale-item-body mr-lg-4">
+                    <div class="sale-item-body mr-lg-4 reveal-left">
                         <h2 class="sale-item__title">
                             <?= $sale['title']; ?>
                         </h2>
@@ -20,7 +20,7 @@
                             Купить
                         </a>
                     </div>
-                    <img src="../../images/content/sale/sale.png" alt="sale" class="sale-item-image d-none d-lg-block">
+                    <img src="../../images/content/sale/sale.png" alt="sale" class="sale-item-image d-none d-lg-block reveal-right">
                 </div>
             </div>
         </div>

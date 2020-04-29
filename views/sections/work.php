@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-sm-11 col-lg-10">
-                <div class="section-description mb-4">
+                <div class="section-description mb-4 reveal-left">
                     <div class="section-description__subtitle">
                         <?= $work['subtitle']; ?>
                     </div>
@@ -13,7 +13,7 @@
                 </div>
             </div>
             <div class="col-sm-9 col-lg-8">
-                <div class="video-play"
+                <div class="video-play reveal-bottom"
                      style="background-image: url(<?= getVideoImageLinkAttribute($work['video_link']) ?>);"
                      data-youtube="<?= getVideoLinkAttribute($work['video_link']) ?>">
                     <svg width="48" height="48">

@@ -4,10 +4,10 @@
         <div class="row">
             <div class="col-12">
                 <div class="laboratory-item">
-                    <div class="laboratory-item-prev">
+                    <div class="laboratory-item-prev reveal-left">
                         <figure style="background-image: url(<?= $laboratory['image']; ?>);"></figure>
                     </div>
-                    <div class="laboratory-item-body">
+                    <div class="laboratory-item-body reveal-right">
                         <h2 class="laboratory-item__title text-secondary">
                             <?= $laboratory['title'] ?>
                         </h2>

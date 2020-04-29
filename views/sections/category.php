@@ -10,7 +10,7 @@
             <?php $count = 0;
             foreach ($category['items'] as $item) : $count++; ?>
                 <div class="col-sm-6 col-lg-4">
-                    <a href="<?= $item['link']; ?>" class="category-item">
+                    <a href="<?= $item['link']; ?>" class="category-item reveal-bottom-interval">
                         <svg width="40" height="40">
                             <use xlink:href="#category-<?= $count; ?>"></use>
                         </svg>

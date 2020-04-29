@@ -6,7 +6,7 @@
             $count = 0;
             foreach ($advantages['items'] as $item) : $count++; ?>
                 <div class="col-sm-8 col-lg-4">
-                    <div class="advantages-item">
+                    <div class="advantages-item reveal-bottom-interval">
                         <div class="advantages-item-prev">
                             <img src="<?= $item['image'] ?>" alt="advantages image">
                         </div>

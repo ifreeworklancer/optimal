@@ -9,7 +9,7 @@
                         <?= $intro['description']; ?>
                     </div>
                 </div>
-                <div class="intro-stocks custom-slider">
+                <div class="intro-stocks custom-slider reveal-left">
                     <?php foreach ($intro['stocks'] as $stock) : ?>
                         <div class="intro-stocks-item">
                             <div class="custom-badges">
@@ -56,7 +56,7 @@
             </div>
             <div class="col-sm-10 col-lg-5">
                 <?php foreach ($intro['items'] as $item) : ?>
-                    <a href="#" class="intro-item" style="background-image: url(<?= $item['image']; ?>);">
+                    <a href="#" class="intro-item reveal-right" style="background-image: url(<?= $item['image']; ?>);">
                         <div class="intro-item-body">
                             <h4 class="intro-item__title">
                                 <?= $item['title']; ?>

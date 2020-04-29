@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row justify-content-around">
             <div class="col-sm-8 col-lg-5 order-2 order-lg-1">
-                <div class="certificates-item">
+                <div class="certificates-item reveal-left">
                     <div class="section-description">
                         <div class="section-description__subtitle">
                             <?= $certificates['subtitle']; ?>
@@ -26,7 +26,7 @@
                 </div>
             </div>
             <div class="col-sm-8 col-lg-5 order-1 order-lg-2">
-                <div class="certificates-slider custom-slider">
+                <div class="certificates-slider custom-slider reveal-right">
                     <?php foreach ($certificates['images'] as $item) : ?>
                         <div class="certificates-slider-item">
                             <img src="<?= $item; ?>" alt="certificates image">

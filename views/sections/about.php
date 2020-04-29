@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="about-item">
-                    <div class="about-item-body">
+                    <div class="about-item-body reveal-left">
                         <div class="section-description">
                             <div class="section-description__subtitle">
                                 <?= $about['subtitle']; ?>
@@ -28,7 +28,7 @@
                             <?php endif; ?>
                         </div>
                     </div>
-                    <div class="about-item-prev">
+                    <div class="about-item-prev reveal-right">
                         <figure style="background-image: url(<?= $about['image']; ?>);"></figure>
                     </div>
                 </div>

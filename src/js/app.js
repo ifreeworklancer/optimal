@@ -22,6 +22,11 @@ window.jQuery = window.$ = jquery;
         }
     });
 
+    $(window).on('scroll', function () {
+        burgerMenu.removeClass('active');
+        menu.removeClass('active');
+    });
+
     /**
      * Show description
      */
@@ -120,6 +125,10 @@ window.jQuery = window.$ = jquery;
     $(document).on('keyup', function (e) {
         if (e.keyCode === 27) {
             $('.outer').remove();
+            if($(contactModal).length) {
+                $(contactModal).removeClass('active');
+                $(modalMask).removeClass('active');
+            }
         }
     });
 
@@ -157,9 +166,25 @@ window.jQuery = window.$ = jquery;
     /**
      * Animate scroll
      */
-    ScrollReveal().reveal('.some-item', {
+    ScrollReveal().reveal('.reveal-left', {
         origin: 'left',
         delay: 400,
         distance: '200px',
+    });
+    ScrollReveal().reveal('.reveal-right', {
+        origin: 'right',
+        delay: 400,
+        distance: '200px',
+    });
+    ScrollReveal().reveal('.reveal-bottom', {
+        origin: 'bottom',
+        delay: 400,
+        distance: '200px'
+    });
+    ScrollReveal().reveal('.reveal-bottom-interval', {
+        origin: 'bottom',
+        delay: 400,
+        distance: '200px',
+        interval: 80
     });
 })(jQuery);
